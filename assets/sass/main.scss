@@ -1,1 +1,16 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//abstracts
+//vendors
+//base
+@import './base/reset.scss';
+@import './base/typography.scss';
+//layout
+@import './layout/header.scss';
+@import './layout/main.scss';
+//components
+@import './components/buttons.scss';
+@import './components/inputs.scss';
+//pages
+//themes

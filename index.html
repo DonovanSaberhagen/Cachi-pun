@@ -13,14 +13,53 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
 
 
     <title>Cachi-pun</title>
   </head>
 
-  <body class="bg-dark pt-3">
-    <h1 class="text-center text-white">HOLA MUNDO</h1>
+  <body>
+
+
+    <header>
+      <h1>Piedra, papel o tijera</h1>
+    </header>
+
+
+    <main>
+      <p class="instrucciones" id="instrucciones">
+        El primero en llegar a 5 puntos Gana!
+      </p>
+      <div class="marcador">
+        <p class="nombre nombre-jugador">Jugador</p>
+        <p class="nombre nombre-computadora">Computadora</p>
+        <p class="puntos">
+          <span id="puntos-usuario">0</span>
+          <span>-</span>
+          <span id="puntos-computadora">0</span>
+        </p>
+      </div>
+      <div class="elije-tu-arma" id="elije-tu-arma">
+        <h2>Elije tu arma para el proximo turno</h2>
+        <div class="armas">
+          <button class="arma" id="piedra🪨">🪨</button>
+          <button class="arma" id="papel📋">📋</button>
+          <button class="arma" id="tijera✂️">✂️</button>
+        </div>
+      </div>
+      <div class="mensaje disabled" id="mensaje">
+        <p>
+          Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+          y la Computadora uso <span class="eleccion" id="eleccion-computadora">piedra🪨</span>
+        </p>
+        <p id="gana-punto">¡Ganaste un Punto!🔥</p>
+      </div>
+      <button class="btn disabled" id="reiniciar">Reiniciar Juego</button>
+      
+    </main>
+    <footer class="footer"></footer>
+    
   </body>
 
 </html>
